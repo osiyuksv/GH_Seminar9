@@ -6,7 +6,7 @@ int numN = Convert.ToInt32(Console.ReadLine());
 
 int SumDigitNunber(int number)
 {
-  if(number / 10 == 0) return (number % 10);
+  if(number == 0) return (0);
   return(number % 10 + SumDigitNunber(number / 10));
 }
 
